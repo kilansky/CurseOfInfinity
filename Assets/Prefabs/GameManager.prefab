@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &705507993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705507995}
+  - component: {fileID: 705507994}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &705507995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 604218875358729737}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!108 &705507994
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.75
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &604218875358729736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604218875358729737}
+  - component: {fileID: 604218875358729742}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &604218875358729737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604218875358729736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 705507995}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &604218875358729742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604218875358729736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76bbb3d62232ad47844e4ad7d7fddbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  baseCurseTime: 10
+  baseStarvationTime: 20
+  baseDehydrationTime: 15
+  baseFoodSpawnTime: 6
+  baseFireflySpawnTime: 6
+  baseCoinSpawnTime: 10
+  baseEnemySpawnTime: 10
+  baseLanternDimTime: 20
+  baseTileFallTime: 4
+  baseEnemyHealth: 1
+  baseEnemySpeed: 2
+  waterFillRate: 0.5
+  curseTimer: 10
+  hungerTimer: 10
+  thirstTimer: 0
+  foodTimer: 10
+  fireflyTimer: 0
+  coinTimer: 10
+  enemyTimer: 10
+  tileTimer: 10
+  lanternTimer: 10
+  foodPrefabs:
+  - {fileID: 2324298309564551376, guid: 85f81f3b7e103ce4f9367c427f6bafaf, type: 3}
+  - {fileID: 4318276637163570848, guid: e76730b2d2bc57447ab4537a34ff7a97, type: 3}
+  coinPrefab: {fileID: 769438575605199553, guid: 68c266230e876254daacc6918eb4ed5b, type: 3}
+  enemyPrefab: {fileID: 2309770895598728269, guid: e0e5b8f2cade05646a45fa9fd32dfd34, type: 3}
+  fireflyPrefab: {fileID: 6483586577647480482, guid: 2d24e1e185d90ec4a934849bd0511627, type: 3}
+  sunlight: {fileID: 705507994}
+  dayLightIntensity: 0.75
+  nightLightIntensity: 0.3
+  nightTransitionTime: 5
+  gameOverTimeSlowFactor: 0.25
+  stage1Curses:
+  - {fileID: 11400000, guid: a7392c67f996c4046866c2f6a78a6fb6, type: 2}
+  - {fileID: 11400000, guid: 5d97d8c0fd578ec4a96a8318298b4de6, type: 2}
+  - {fileID: 11400000, guid: b390ce36f62d1a643b36fe93876f188c, type: 2}
+  - {fileID: 11400000, guid: e874d7172bbd8004e8e17121dd7eff7b, type: 2}
+  stage2Curses:
+  - {fileID: 11400000, guid: c6332214c51946e48b35071d50f7750e, type: 2}
+  - {fileID: 11400000, guid: 5997210dfe0af5c49b54f43df68f90dc, type: 2}
+  - {fileID: 11400000, guid: 9f5656e03f4ecc544974178c44811fb4, type: 2}
+  - {fileID: 11400000, guid: e56c9ba59000dfc4aa6d0e7641295d7c, type: 2}
+  - {fileID: 11400000, guid: 35ccd0dd301af3447a98a4b7c99f92ce, type: 2}
+  - {fileID: 11400000, guid: c12aab5a2dbfa85489664cb44bb6dfd7, type: 2}
+  stage3Curses:
+  - {fileID: 11400000, guid: 7f67693783ba8b5499586a4960ee5bd5, type: 2}
+  - {fileID: 11400000, guid: ae4ebb95b1c4aec4f8d694fe3e376a6a, type: 2}
+  - {fileID: 11400000, guid: 8faf31e562c442a4d95b9ebac03402c0, type: 2}
+  curseOfSkull: {fileID: 11400000, guid: bcd43517bcb20804a85cf8f1257f2c8d, type: 2}
+  curseOfWealth: {fileID: 11400000, guid: a17d375aaa089dd49a454a66b060237a, type: 2}
+  curseOfMoreWealth: {fileID: 11400000, guid: 5db188490c7d81f47a7d6347e60a34a9, type: 2}
+  curseOfGun: {fileID: 11400000, guid: 55893fedbbb9ff54697e50c25cf64cb3, type: 2}
+  curseOfUnstableGround: {fileID: 11400000, guid: 37b4c0a4859bca34e901d5fd9d763ec1, type: 2}
+  gameOver: 0
