@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.GetComponent<PlayerController>())
         {
-            GameManager.Instance.GameOver(causesOfDeath.zombie);
+            // GameManager.Instance.GameOver(causesOfDeath.zombie);
         }
     }
 
